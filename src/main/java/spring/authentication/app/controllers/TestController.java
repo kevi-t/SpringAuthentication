@@ -1,4 +1,4 @@
-package spring.authentication.app.controller;
+package spring.authentication.app.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

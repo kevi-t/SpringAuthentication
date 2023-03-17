@@ -13,7 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import spring.authentication.app.service.UserDetailsService;
+import spring.authentication.app.services.UserDetailsService;
 
 import java.io.IOException;
 

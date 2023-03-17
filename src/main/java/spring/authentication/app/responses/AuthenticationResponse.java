@@ -1,4 +1,4 @@
-package spring.authentication.app.response;
+package spring.authentication.app.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterResponse {
+public class AuthenticationResponse {
     private int status;
     private String message;
     //TODO: implement how to display data to the client
     private String data;
-    private  String token;
+    private String token;
 }

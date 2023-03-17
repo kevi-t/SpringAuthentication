@@ -1,4 +1,4 @@
-package spring.authentication.app.model;
+package spring.authentication.app.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

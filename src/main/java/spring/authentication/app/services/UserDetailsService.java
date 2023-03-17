@@ -1,11 +1,11 @@
-package spring.authentication.app.service;
+package spring.authentication.app.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import spring.authentication.app.repository.UserRepository;
+import spring.authentication.app.repositories.UserRepository;
 @Component
 @RequiredArgsConstructor
 public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
