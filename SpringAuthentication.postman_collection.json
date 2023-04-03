@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "8e158136-2f88-405e-88b1-3ea42a0b89c7",
+		"name": "SpringAuthentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22113006"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"firstname\": \"Kevin\",\r\n   \"lastname\": \"Wafula\",\r\n   \"email\": \"kelvinwafula1999@gmail.com\",\r\n   \"password\": \"java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/spring/auth/app/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"spring",
+						"auth",
+						"app",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\":\"johnkinyua@gmail.com\",\r\n   \"password\":\"java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/spring/auth/app/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"spring",
+						"auth",
+						"app",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZWx2aW53YWZ1bGExOTk5QGdtYWlsLmNvbSIsImlhdCI6MTY3ODg2MTE1MiwiZXhwIjoxNjc4ODYyNTkyfQ.lbtkFqO_kF12WDr1vd09HgfOj89695UVIB8lQAfDBOE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/spring/auth/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"spring",
+						"auth",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
